@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <title>Doctor Login</title>
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["s1"].value;
+    var z = document.forms["myForm"]["s2"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+     if (z == "") {
+         alert("Password must be filled out");
+        return false;
+} 
+} 
+    
+   
+        
+    
+
+
+    </script>
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+color: #5a5656;
+font-family: 'Open Sans', italic, Times new roman,  sans-serif;
+font-size: 23px;
+line-height: 1em;
+}
+a { text-decoration: none; }
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 15px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+margin: 100px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #e5e5e5;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #B22222;
+font-family: 'Open Sans', italic, Times new roman, sans-serif;
+font-size: 18px;
+height: 70px;
+outline: none;
+padding: 0px 10px;
+width: 350px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans',italic, Times new roman , sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 350px;
+-webkit-appearance:none;
+}
+form fieldset a {
+color: #0048BA;
+font-size: 18px;
+}
+form fieldset a:hover { text-decoration: underline; }
+.btn-round {
+background-color: #5a5656;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+color: #f4f4f4;
+display: block;
+font-size: 12px;
+height: 50px;
+line-height: 50px;
+margin: 30px 125px;
+text-align: center;
+text-transform: uppercase;
+width: 50px;
+}
+.facebook-before {
+background-color: #0064ab;
+border-radius: 3px 0px 0px 3px;
+-moz-border-radius: 3px 0px 0px 3px;
+-webkit-border-radius: 3px 0px 0px 3px;
+color: #f4f4f4;
+display: block;
+float: left;
+height: 50px;
+line-height: 50px;
+text-align: center;
+width: 50px;
+}
+.facebook {
+background-color: #0079ce;
+border: none;
+border-radius: 0px 3px 3px 0px;
+-moz-border-radius: 0px 3px 3px 0px;
+-webkit-border-radius: 0px 3px 3px 0px;
+color: #f4f4f4;
+cursor: pointer;
+height: 50px;
+text-transform: uppercase;
+width: 250px;
+}
+.twitter-before {
+background-color: #189bcb;
+border-radius: 3px 0px 0px 3px;
+-moz-border-radius: 3px 0px 0px 3px;
+-webkit-border-radius: 3px 0px 0px 3px;
+color: #f4f4f4;
+display: block;
+float: left;
+height: 50px;
+line-height: 50px;
+text-align: center;
+width: 50px;
+}
+.twitter {
+background-color: #1bb2e9;
+border: none;
+border-radius: 0px 3px 3px 0px;
+-moz-border-radius: 0px 3px 3px 0px;
+-webkit-border-radius: 0px 3px 3px 0px;
+color: #f4f4f4;
+cursor: pointer;
+height: 50px;
+text-transform: uppercase;
+width: 250px;
+}
+
+</style>
+</head>
+<body background="images/banner.png"> 
+    
+<div id="login">
+    <h1><strong><font color="#4B5320">Welcome.</strong> Admin Please  login.</font></h1>
+    <br>
+    <br>
+<form name="myForm" action="adminvalidation.jsp" onsubmit="return validateForm()" method="post">
+<fieldset>
+    <p><input type="text" id="r" name="s1" placeholder="Enter Username" size="15"></p>
+    <p><input type="password" id="r" placeholder="Enter Password" name="s2" size="10"></p>
+
+<p><input type="submit" value="Login" onsubmit="validate()"></p>
+</fieldset>
+</form>
+    </body>
+</html>

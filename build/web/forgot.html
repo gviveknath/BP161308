@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+body {
+background-color: #f4f4f4;
+color: #5a5656;
+font-family: 'Open Sans', italic, Times new roman,  sans-serif;
+font-size: 23px;
+line-height: 1em;
+}
+a { text-decoration: none; }
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 15px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+margin: 100px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #e5e5e5;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #B22222;
+font-family: 'Open Sans', italic, Times new roman, sans-serif;
+font-size: 18px;
+height: 70px;
+outline: none;
+padding: 0px 10px;
+width: 350px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans',italic, Times new roman , sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 180px;
+-webkit-appearance:none;
+}
+form fieldset input[type="reset"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans',italic, Times new roman , sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 180px;
+-webkit-appearance:none;
+}
+form fieldset a {
+color: #0048BA;
+font-size: 18px;
+}
+
+form fieldset a:hover { text-decoration: underline; }
+.btn-round {
+background-color: #5a5656;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+color: #f4f4f4;
+display: block;
+font-size: 12px;
+height: 50px;
+line-height: 50px;
+margin: 30px 125px;
+text-align: center;
+text-transform: uppercase;
+width: 50px;
+}
+
+</style>
+    </head>
+   <title>e-Health Care</title>
+<link href="health.css" rel="stylesheet">
+<script src="effect.js"></script>
+<script src="validate.js"></script>
+
+
+ <body background="images/banner.png">  
+
+
+
+<div id="login">
+<h1><strong>Welcome</strong> Forgot Password</h1>
+<form name="myForm" action="forgotpassword.jsp" onsubmit="return validateForm()" method="post">
+<fieldset>
+    <p><input type="text" id="r"  placeholder="User Name" name="user" size="15"></p>
+    <p><Td align=right>Hint Question:</td><Td><select name=hint_question>
+     <option value="null" selected>Hint Question</option>
+     <option value="food">Favorite Food</option>
+     <option value="place">Historical Place</option>
+     <option value="pet">Pet Name</option>
+     <option value="event">Memorable Event</option>
+        </select></td></p>
+    <p><input type="text" id="r"  placeholder="Hint Answer" name="hint_answer" size="10"></p>
+    
+
+<p><input type="submit" name="action" value="Ok" onsubmit="validate()">
+<input type="reset" name="action" value="Refresh" onsubmit="validate()"></p>
+</fieldset>
+</form>
